@@ -1,0 +1,46 @@
+#page {
+    text-align: center;
+    max-width: 960px;
+    background-color: darkgrey;
+    padding: 30px;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    background-color: orange;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    border-style: groove;
+    border-color: lightsalmon;
+}
+
+.hot {
+    background-color: crimson;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    border-style: groove;
+    border-color: lightcoral;
+}
+
+.cool {
+    background-color: lightblue;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    border-style: groove;
+    border-color: aliceblue;
+}
+
+p {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    border-style: groove;
+}
