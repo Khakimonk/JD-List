@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/JD-list.css">
     <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-hQpvDQiCJaD2H465dQfA717v7lu5qHWtDbWNPvaTJ0ID5xnPUlVXnKzq7b8YUkbN" crossorigin="anonymous">
     <title>JD List test</title>
 </head>
 
@@ -12,14 +13,18 @@
     <div id="page">
         <h1 id="header2">List</h1>
         <h2>Buy groceries</h2>
-        <ul>
-            <li id="one" class="hot"><em>fresh</em> figs</li>
-            <li id="two" class="hot">pine nuts</li>
-            <li id="three" class="hot">honey</li>
+        <form id="myForm">
+            <input type="text" id="userInput">
+            <button id="submit">SUBMIT</button>
+        </form>
+        <ul id="list">
+            <li id="one"><em>fresh</em> figs<i class="fa fa-trash-o fa-lg" aria-hidden="true"></i></li>
+            <li id="two">pine nuts</li>
+            <li id="three">honey</li>
             <li id="four">balsamic vinegar</li>
         </ul>
         <div id='scriptResults'></div>
     </div>
-   <!-- <script src="JS/JD-list.js"></script> -->
+   <script src="JS/JD-list.js"></script>
 </body>
 </html>

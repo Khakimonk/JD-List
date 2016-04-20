@@ -1,17 +1,17 @@
-var elSelected = document.getElementById('two');
+var elList, addLink, newEl, newText, counter, listItems, newItem;
 
-function changeClass() {
-    elSelected.className = 'cool';
+elList = document.getElementById('list');
+addLink = document.getElementById('submit');
+newItem = document.getElementById('userInput');
+
+function addItem(e) {
+    var newTextItem = newItem.value;
+    e.preventDefault();
+    newEl = document.createElement('li');
+    newText = document.createTextNode(newTextItem);
+    newEl.appendChild(newText);
+    elList.appendChild(newEl);
+    newItem.value = '';
 }
 
-function changeClassBack() {
-    elSelected.className = 'hot';
-}
-
-elSelected.addEventListener('mouseenter', function() {
-    changeClass();
-}, false);
-
-elSelected.addEventListener('mouseout', function() {
-    changeClassBack();
-}, false);
+addLink.addEventListener('click', addItem, false);
