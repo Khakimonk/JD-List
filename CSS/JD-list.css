@@ -72,4 +72,11 @@ p {
 
 i {
     float: right;
+    background-color: grey;
+    padding: 7px;
+    margin-top: -8px;
+    margin-right: -8px;
+    border-top-style: groove;
+    border-right-style: groove;
+    border-bottom-style: groove;
 }
